@@ -44,7 +44,7 @@ export const Qr = () => {
               </div>
             }
             <Form setLink={setLink} link={link}/>
-            <button disabled={!link} className=' w-[90%] sm:w-[33%] bg-black text-2xl text-white rounded-full p-5' onClick={handleQrRequest}>Get QR Code</button>
+            <button disabled={!link} className=' w-[90%] sm:w-[33%] bg-black text-2xl text-white rounded-full p-5 hover:outline hover:outline-4 hover:outline-purple-200 ' onClick={handleQrRequest}>Get QR Code</button>
         </div>
     )
 }
