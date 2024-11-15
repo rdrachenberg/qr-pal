@@ -37,14 +37,14 @@ export const Qr = () => {
     }, [link])
 
     return (
-        <div className="flex flex-col justify-center align-middle items-center">
+        <div className="flex flex-col justify-center align-middle items-center mt-10">
             {qr && 
               <div className='flex flex-col justify-center align-middle items-center mb-5'>
                 <Image width={200} height={100} src={qr} alt='qr code' className='rounded-xl'/>
               </div>
             }
             <Form setLink={setLink} link={link}/>
-            <button disabled={!link} className=' w-full bg-black text-4xl text-white rounded-full p-5' onClick={handleQrRequest}>Get QR Code</button>
+            <button disabled={!link} className=' w-[90%] sm:w-[33%] bg-black text-2xl text-white rounded-full p-5' onClick={handleQrRequest}>Get QR Code</button>
         </div>
     )
 }
