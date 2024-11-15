@@ -29,7 +29,7 @@ export default function Shorty() {
         <div>
             <Header />
             <div className='flex min-h-screen flex-col bg-gradient-to-r from-blue-200 to-cyan-200 '>
-                <div className='flex flex-col justify-center align-middle items-center mt-14'>
+                <div className='flex flex-col justify-center align-middle items-center mt-10'>
                 {shortenedLink && <div className='text-3xl text-black rounded bg-white p-2'>{shortenedLink}</div>}
                     <input 
                         id="link" 
@@ -42,7 +42,6 @@ export default function Shorty() {
                     />
                     <button className=" w-[90%] sm:w-[25%] bg-black text-2xl text-white rounded-full p-5 hover:outline hover:outline-4 hover:outline-purple-200" onClick={handleShortenClick}>Make Short Link</button>
                 </div>
-                
             </div>
             <Footer />
         </div>

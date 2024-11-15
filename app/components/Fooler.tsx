@@ -1,7 +1,7 @@
 export const Footer = () => {
 
     return (
-        <div className='h-[50px] bg-gray-800 flex flex-row justify-center align-middle items-center sticky top-[100vh]'>
+        <div className='h-[50px] bg-gray-800 flex flex-row justify-center align-middle items-center sticky top-[100vh] flex-shrink'>
             <a href='https://ryan-drachenberg.vercel.app/about' target='_blank'>
                 <div className='bg-gradient-to-r from-violet-200 to-pink-200 bg-clip-text text-transparent text-xl flex flex-row '>
                     <div className='mr-2'>Made with</div>
